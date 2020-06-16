@@ -1,5 +1,5 @@
 ## pd.sh : preserve intermediate outputs in a Linux terminal pipeline command
-In a typical Linux terminal piped command, the intermediate outputs (and errors, if any) are lost. This tool preserves intermediate outputs/errors for inspection and/or debugging. It breaks each stage of the pipeline as a separate command in a shell script. It runs the script with user permission inside a randomly generated sandbox dir. It will print the exit status of the individual commands and preserve standard output and error in numbered files inside the dir.
+In a typical Linux terminal piped command, the intermediate outputs (and errors, if any) are lost. This tool preserves intermediate outputs and errors for inspection and/or debugging. It decomposes each stage of the pipeline as a separate command and places it in a shell script. It then runs the script with user permission inside a randomly generated sandbox dir. It prints the exit status of the commands and saves standard output and error in numbered files inside the dir.
 
 ### Usage Examples:
 
@@ -25,7 +25,7 @@ Want to run now? [y/N] y
 The stdouts and stderrs are in ./omzele dir
 ```
 
-## Known Limitation
+## Known Limitations
 No way to escape the shell expansion in the quick `!!` way. One has to manually escape the `$` using \; for instance in the following pipeline the awk will run without $1 because bash expansion eats $1:
 
 ```bash
