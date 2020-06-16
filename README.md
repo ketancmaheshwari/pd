@@ -6,7 +6,7 @@ When you run the pd.sh script with your piped command as an argument, it will de
 If you say no (default), it will simply create the shell script for you that you may run manually.
 
 ### Usage Example:
-```
+```sh
 ./pd.sh 'ls -lr |  grep $(date +%b)'
 Want to run now? [y/N] y
 1. Exit status of ls -lr is 0
