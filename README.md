@@ -11,7 +11,7 @@ Want to run now? [y/N] y
 The stdouts and stderrs are in ./2qg65f dir
 ```
 
-A quick way to run this is to use !!, the bash shorthand to print last command run, for instance:
+A quick way to run this is to use `!!`, the bash shorthand to print last command run, for instance:
 
 ```bash
 $ ps aux | grep -v grep | grep -i -e $USER
@@ -26,7 +26,7 @@ The stdouts and stderrs are in ./omzele dir
 ```
 
 ## Known Limitation
-No way to escape the shell expansion in the quick !! way. One has to manually escape the $; for instance in the following pipeline the awk will run without $1 because bash expansion ate $1:
+No way to escape the shell expansion in the quick `!!` way. One has to manually escape the `$` using \; for instance in the following pipeline the awk will run without $1 because bash expansion eats $1:
 
 ```bash
 $ free -m|grep Mem:|awk '{print $4}'
