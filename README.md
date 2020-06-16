@@ -14,14 +14,14 @@ The stdouts and stderrs are in ./2qg65f dir
 In a debugging scenario, a quick way to run this is to use `!!`, the bash shorthand to print last command run, for instance:
 
 ```bash
-$ ps aux | grep -v grep | grep -i -e $USER
+$ ps aux | grep -v grep | grp -i -e $USER
 ...some error...
 $ ./pd.sh "!!"
-./pd.sh "ps aux | grep -v grep | grep -i -e $USER"
+./pd.sh "ps aux | grep -v grep | grp -i -e $USER"
 Want to run now? [y/N] y
 1. Exit status of ps aux is 0
 2. Exit status of grep -v grep is 0
-3. Exit status of grep -i -e ketan is 0
+3. Exit status of grp -i -e ketan is 127
 The stdouts and stderrs are in ./omzele dir
 ```
 
