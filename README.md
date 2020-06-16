@@ -11,11 +11,11 @@ Want to run now? [y/N] y
 The stdouts and stderrs are in ./2qg65f dir
 ```
 
-A quick way to run this is to use `!!`, the bash shorthand to print last command run, for instance:
+In a debugging scenario, a quick way to run this is to use `!!`, the bash shorthand to print last command run, for instance:
 
 ```bash
 $ ps aux | grep -v grep | grep -i -e $USER
-...output...
+...some error...
 $ ./pd.sh "!!"
 ./pd.sh "ps aux | grep -v grep | grep -i -e $USER"
 Want to run now? [y/N] y
