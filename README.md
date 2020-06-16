@@ -18,6 +18,7 @@ A quick way to run this is to use !!, the bash shorthand to print last command r
 $ ps aux | grep -v grep | grep -i -e $USER
 ...output...
 $ ./pd.sh "!!"
+./pd.sh "ps aux | grep -v grep | grep -i -e $USER"
 Want to run now? [y/N] y
 1. Exit status of ps aux is 0
 2. Exit status of grep -v grep is 0
