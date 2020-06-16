@@ -15,5 +15,11 @@ echo $* | tr '|' '\n' | awk -v sid="$sid" 'BEGIN {
                                              printf("echo The stdouts and stderrs are in ./%s dir\n",sid) 
                                            }' > $sid.sh
 
-echo "To run: chmod +x $sid.sh; ./$sid.sh"
 
+read -r -p "Want to run now? [y/N] " response
+if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
+then
+    chmod +x $sid.sh; ./$sid.sh
+else
+    echo "To run: chmod +x $sid.sh; ./$sid.sh"
+fi
