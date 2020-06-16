@@ -1,7 +1,7 @@
 ## pd.sh : preserve intermediate outputs in a Linux terminal pipeline command
 In a typical Linux terminal piped command, the intermediate outputs (and errors, if any) are lost. This tool preserves intermediate outputs/errors for inspection and/or debugging. It breaks each stage of the pipeline as a separate command in a shell script. It runs the script with user permission inside a randomly generated sandbox dir. It will print the exit status of the individual commands and preserve standard output and error in numbered files inside the dir.
 
-### Usage Example:
+### Usage Examples:
 
 ```bash
 $ ./pd.sh 'ls -lr |  grep $(date +%b)'
