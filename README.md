@@ -1,5 +1,5 @@
 # pd.sh
-When you run a typical Linux terminal piped command, the intermediate outputs (and errors, if any) are lost. This script preserves outputs/errors for inspection or debugging. It breaks each stage of the pipeline as a separate command in a shell script and asks you if you'd like to run the script. If you say yes, it will run the script inside a randomly generated sandbox dir. It will print the exit status of the individual commands and preserve standard output and errors in numbered files inside a randomly generated directory. If you say no (default), it will simply create the shell script for you that you may run manually.
+In a typical Linux terminal piped command, the intermediate outputs (and errors, if any) are lost. This little tool preserves intermediate outputs/errors for inspection or debugging. It breaks each stage of the pipeline as a separate command in a shell script and asks you if you'd like to run the script. If you say yes, it will run the script inside a randomly generated sandbox dir. It will print the exit status of the individual commands and preserve standard output and errors in numbered files inside a randomly generated directory. If you say no (default), it will simply create the shell script for you that you may run manually.
 
 ### Usage Example:
 
