@@ -1,9 +1,5 @@
 # pd.sh
-Linux terminal piped commands preserve outputs and debug. This little tool allows you to preserve the standard output and errors in intermediate files in a sandbox directory for inspection and/or debugging.
-
-When you run the pd.sh script with your piped command as an argument, it will detach each stage of the pipeline as a separate command in a shell script and ask you if you'd like to run the script. If you say yes, it will run the script. It will print the exit status of the individual commands and preserve standard output and errors in numbered files inside a randomly generated directory.
-
-If you say no (default), it will simply create the shell script for you that you may run manually.
+When you run a typical Linux terminal piped command, the intermediate outputs (and errors, if any) are lost. This script preserves outputs/errors for inspection or debugging. It breaks each stage of the pipeline as a separate command in a shell script and asks you if you'd like to run the script. If you say yes, it will run the script inside a randomly generated sandbox dir. It will print the exit status of the individual commands and preserve standard output and errors in numbered files inside a randomly generated directory. If you say no (default), it will simply create the shell script for you that you may run manually.
 
 ### Usage Example:
 ```sh
