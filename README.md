@@ -8,7 +8,7 @@ $ ./pd.sh 'ls -lr |  grep $(date +%b)'
 Want to run now? [y/N] y
 1. Exit status of ls -lr is 0
 2. Exit status of grep Jun is 0
-The stdouts and stderrs are in ./2qg65f dir
+The stdouts and stderrs are in ./2qg65f.dir dir
 ```
 
 In a debugging scenario, a quick way to run this is to use `!!`, the bash shorthand to print last command run, for instance:
@@ -22,7 +22,7 @@ Want to run now? [y/N] y
 1. Exit status of ps aux is 0
 2. Exit status of grep -v grep is 0
 3. Exit status of grp -i -e ketan is 127
-The stdouts and stderrs are in ./omzele dir
+The stdouts and stderrs are in ./omzele.dir dir
 ```
 
 ## Known Limitations
@@ -36,5 +36,5 @@ Want to run now? [y/N] y
 1. Exit status of free -m is 0
 2. Exit status of grep Mem: is 0
 3. Exit status of awk {print } is 0
-The stdouts and stderrs are in ./4cs37n dir
+The stdouts and stderrs are in ./4cs37n.dir dir
 ```
