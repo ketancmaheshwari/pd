@@ -25,7 +25,7 @@ Want to run now? [y/N] y
 The stdouts and stderrs are in ./omzele.dir dir
 ```
 ## But this is same as tee
-Yes. Except that it preserves standard errors of the intermediate commands and is relatively easy to read compared to interjecting tee commands at each stage of the pipeline.
+Yes. Except that it preserves standard errors of the intermediate commands (in addition to stdout) and is relatively easy to read compared to interjecting tee commands at each stage of the pipeline.
 
 ## Known Limitations
 No way to escape the shell expansion in the quick `!!` way. One has to manually escape the `$` using \; for instance in the following pipeline the awk will run without $1 because bash expansion eats $1:
